@@ -45,9 +45,9 @@ class _PageUnState extends State<PageUn> {
   ];
 
   List<DropdownMenuItem<String>> listNam = [
-    DropdownMenuItem(value: "Bob", child: Text("Bob")),
-    DropdownMenuItem(value: "Arkin", child: Text("Arkin")),
-    DropdownMenuItem(value: "Jeanine", child: Text("Jeanine")),
+    const DropdownMenuItem(value: "Bob", child: Text("Bob")),
+    const DropdownMenuItem(value: "Arkin", child: Text("Arkin")),
+    const DropdownMenuItem(value: "Jeanine", child: Text("Jeanine")),
   ];
 
   _confirme($value){

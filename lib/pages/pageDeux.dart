@@ -1,7 +1,7 @@
-import 'dart:html';
+//import 'dart:html';
 
 import 'package:flutter/material.dart';
-import 'package:http/http.dart'as http;
+//import 'package:http/http.dart'as http;
 
 
 class PageDeux extends StatefulWidget {
@@ -13,7 +13,7 @@ class PageDeux extends StatefulWidget {
 
 
 class _PageDeuxState extends State<PageDeux> {
-
+/*
   Url? _donneesTrouvees;
   bool _enChargement = false;
 
@@ -40,20 +40,24 @@ class _PageDeuxState extends State<PageDeux> {
     
   }
 
-
+*/
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("test sur les API")),
-      body: Column(
+      body: const Column(
         children: [
+
+          Text("Yo"),
+          Text("welcom in a test page for api")
+          /*
           const Text("bienvenu sur ma page de test des API avec l'api des chats AAAAAAAAAA"),
           
           FilledButton(onPressed: _buttonClicked, child: const Text("clickez ici pour obtenir l'url d'une image de chat ")),
           // ignore: unrelated_type_equality_checks
           if (_donneesTrouvees != "") Text(_donneesTrouvees as String), // datas  trouvé alors affiches
           if (_enChargement) const CircularProgressIndicator(), // cercle de charchement
-        
+        */
         ],
       )
     );

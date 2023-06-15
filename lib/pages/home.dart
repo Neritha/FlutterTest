@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:les_tests_et_exercices/pages/pageCinq.dart';
 import 'package:les_tests_et_exercices/pages/pageDeux.dart';
+import 'package:les_tests_et_exercices/pages/pageQuatre.dart';
+//import 'package:les_tests_et_exercices/pages/pageDeux.dart';
 import 'package:les_tests_et_exercices/pages/pageTrois.dart';
 import 'package:les_tests_et_exercices/pages/pageUn.dart';
 
@@ -57,6 +60,28 @@ class _HomeState extends State<Home> {
                   );
                 } , 
                 child: const Text("test async",)
+              ),
+
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    PageRouteBuilder(pageBuilder:(_, __, ___) => const PageQuatre()
+                    )
+                  );
+                } , 
+                child: const Text("Premier test async",)
+              ),
+
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    PageRouteBuilder(pageBuilder:(_, __, ___) => const PageCinq()
+                    )
+                  );
+                } , 
+                child: const Text("Premier test async + API",)
               ),
 
             ],
