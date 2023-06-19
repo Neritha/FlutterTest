@@ -1,4 +1,8 @@
+//import 'dart:math';
+
 import 'package:flutter/material.dart';
+//import 'package:les_tests_et_exercices/main.dart';
+import 'package:les_tests_et_exercices/pages/miniApp.dart';
 import 'package:les_tests_et_exercices/pages/pageCinq.dart';
 import 'package:les_tests_et_exercices/pages/pageDeux.dart';
 import 'package:les_tests_et_exercices/pages/pageQuatre.dart';
@@ -81,7 +85,18 @@ class _HomeState extends State<Home> {
                     )
                   );
                 } , 
-                child: const Text("Premier test async + API",)
+                child: const Text("test async + API",)
+              ),
+
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    PageRouteBuilder(pageBuilder:(_, __, ___) => const MiniApp()
+                    )
+                  );
+                } , 
+                child: const Text("mini app",)
               ),
 
             ],

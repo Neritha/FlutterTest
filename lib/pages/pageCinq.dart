@@ -1,11 +1,12 @@
 //import 'dart:html';
 //import 'dart:html';
 
-import 'dart:convert';
+//import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:http/http.dart'as http;
-import 'package:les_tests_et_exercices/pages/cat.dart';
+//import 'package:http/http.dart'as http;
+//import 'package:les_tests_et_exercices/pages/cat.dart';
+
 
 class PageCinq extends StatefulWidget {
   const PageCinq({super.key});
@@ -15,7 +16,7 @@ class PageCinq extends StatefulWidget {
 }
 
 class _PageCinqState extends State<PageCinq> {
-
+/*
  Future<Cat> _fetchData() async{ 
     final response =  await http.get(Uri.parse("https://api.thecatapi.com/v1/images/search"));
     if (response.statusCode == 200){
@@ -26,17 +27,18 @@ class _PageCinqState extends State<PageCinq> {
     } else {
       throw Exception("erreur de chargement des données");
     }
- }
+ }*/
 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("test avec des images de chats (enfin on espère)")),
-      body: Center(
+      body: const Center(
         child: 
+          Text("en construction")
           //const Text("bienvenu sur ma page de test asyncrone future et compagnie"),
-
+/*
           FutureBuilder<Cat>(
             builder: (context, snapshot){
               if(snapshot.hasData){
@@ -49,7 +51,7 @@ class _PageCinqState extends State<PageCinq> {
               }
             },
             future: _fetchData(),
-          ),
+          ),*/
       )
     );
   }
